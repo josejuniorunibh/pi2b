@@ -1,0 +1,15 @@
+<p>Categorias</p>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Descricão</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of categorias">
+        <th scope="row">{{ c.id }}</th>
+        <td>{{ c.descricao }}</td>
+      </tr>
+    </tbody>
+  </table>
