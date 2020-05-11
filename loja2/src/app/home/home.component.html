@@ -1,0 +1,10 @@
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Nome</span>
+    </div>
+    <input type="text" [(ngModel)]="title" class="form-control" placeholder="Title" aria-label="Title" aria-describedby="basic-addon1"/>
+  </div>
+
+  <!-- Resources -->
+  <h1 *ngIf='title.length > 3'> App: {{ title }}  </h1>
+  <h2> {{ imprime(title) }} </h2>
